@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { DB_NAME } from "D:\VVC++\Mern back\vidtube\tube\src\constants.js";
+import { DB_NAME } from "../constants.js";
 
 const connectDB = async () => {
     try {

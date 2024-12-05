@@ -22,4 +22,11 @@ app.use(express.urlencoded({
 
 app.use(express.static('public'));
 
+// import routes 
+import healthcheckRouter from './routes/healthcheck.route.js';  
+
+// use routes
+app.use('/api/v1/healthcheck', healthcheckRouter); 
+
+
 export { app };
