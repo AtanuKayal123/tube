@@ -11,15 +11,13 @@ connectDB()
 .then(() => {
     console.log("Database connected");
     app.listen(Port, (req,res)=>{
-        console.log(`Server is running on port ${Port}`);
+        console.log(`Server is running on port ${Port}`); 
     });
 })
 .catch((err) => {
     console.log("Database connection error", err);
     process.exit(1);
 });
-
-
  
 
 
