@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-
+import cookieParser from 'cookie-parser';
 // create express app
 const app = express(); 
 
@@ -21,6 +21,8 @@ app.use(express.urlencoded({
 }));
 
 app.use(express.static('public'));
+
+app.use(cookieParser()); // cookie parser middleware 
 
 // import routes 
 import healthcheckRouter from './routes/healthcheck.route.js';  
